@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!-- 定义逻辑视图与物理视图之间的联系 -->
+    <package name="userManager" namespace="/" extends="struts-default">
+       
+        <action name="querAction" class="com.user.action.UserAction" method="queryBook">
+            <result name="success">/jsp/success.jsp</result>
+            <result name="failure">/jsp/failure.jsp</result>
+        </action>
+        <action name="delete" class="com.user.action.UserAction" method="deleteBook">
+            <!-- 将index映射到物理地址 -->
+            <result name="success">/jsp/delete.jsp</result>
+            <result name="failure">/jsp/failure.jsp</result>
+        </action>
+        <action name="detail" class="com.user.action.UserAction" method="showDetail">
+            <!-- 将index映射到物理地址 -->
+            <result name="detailPage">/jsp/detail.jsp</result>
+            <result name="failure">/jsp/failure.jsp</result>
+        </action>
+        <action name="addbook" class="com.user.action.UserAction" method="addDetail">
+            <!-- 将index映射到物理地址 -->           
+            <result name="detailPage">/jsp/detail.jsp</result>
+            <result name="addbook">/jsp/addbook.jsp</result>
+        </action>
+        <action name="addauthor" class="com.user.action.UserAction" method="addauthor">
+            <!-- 将index映射到物理地址 -->           
+            <result name="detailPage">/jsp/detail.jsp</result>
+            <result name="failure">/jsp/failure.jsp</result>
+        </action>
+        <action name="gengxin" class="com.user.action.UserAction" method="gengxin">
+            <!-- 将index映射到物理地址 -->           
+            <result name="detailPage">/jsp/detail.jsp</result>
+            <result name="failure">/jsp/failure.jsp</result>
+        </action>
+    </package>
+    <!-- end -->
+</struts>
+
