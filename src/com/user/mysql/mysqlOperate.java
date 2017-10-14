@@ -151,20 +151,7 @@ public class mysqlOperate {
             /*while(rs.next()){
                 // 通过字段检索
             	
-            	BOOK b=new BOOK();
-                b.ISBN  = rs.getString("ISBN");
-                b.TITLE = rs.getString("Title");
-                b.AUTHORID = rs.getString("AuthorID");
-                b.PUBLISHER  = rs.getString("Publisher");
-                b.PUBLISHDATA = rs.getString("PublishData");
-                b.PRICE = rs.getString("Price");
-                bookList.add(b);
-                String ISBN  = rs.getString("ISBN");
-                String Title = rs.getString("Title");
-                String AuthorID = rs.getString("AuthorID");
-                String Publisher  = rs.getString("Publisher");
-                String PublishData = rs.getString("PublishData");
-                String Price = rs.getString("Price");
+            	
                 
                 
                 // 输出数据
